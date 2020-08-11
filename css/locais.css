@@ -1,0 +1,133 @@
+html {
+    /*css de toda a página*/
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fff5f3;
+}
+
+.logo {
+    /*css da imagem no inicio*/
+    height: 300px;
+    width: auto;
+    margin: 10px;
+}
+
+#logo {
+    /*css da imagem no inicio*/
+    text-align: center;
+}
+
+.li-p:hover ul {
+    /*css da lista no menu lateral ao passar o mouse*/
+    height: auto;
+    max-height: 400px;
+    visibility: visible;
+}
+
+.botao-menu {
+    /*css do menu lateral*/
+    display: inline-block;
+    visibility: visible;
+    block-size: 15px;
+    z-index: 1;
+    position: fixed;
+    top: 0px;
+}
+
+.icone-menu {
+    /*css da imagem do menu lateral*/
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    margin-bottom: 0px;
+}
+
+.menu {
+    /*css da lista no menu lateral*/
+    margin-left: -500%;
+    width: 500px;
+}
+
+.menu ul {
+    /*css da lista no menu lateral*/
+    list-style: none;
+    position: absolute;
+}
+
+.menu ul ul {
+    /*css da sub-lista no menu lateral*/
+    visibility: hidden;
+    position: relative;
+    overflow: hidden;
+    max-height: 0;
+    transition: 0.8s;
+    width: 100%;
+}
+
+.menu ul li {
+    /*css da lista no menu lateral*/
+    width: 100%;
+    float: none;
+}
+
+.menu ul li:hover ul {
+    /*css da lista no menu lateral ao passar o mouse*/
+    height: auto;
+    max-height: 400px;
+    visibility: visible;
+}
+
+.menu a {
+    /*css do texto na lista no menu lateral*/
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+    text-align: right;
+    background-color: bisque;
+    color: black;
+    cursor: pointer;
+}
+
+.menu a:hover {
+    /*css do texto na lista no menu lateral ao passar o mouse*/
+    background-color: rgb(243, 229, 211);
+    text-align: left;
+}
+
+#bt-menu {
+    /*css do botão do menu lateral*/
+    display: none;
+    position: absolute;
+    text-align: center;
+}
+
+#bt-menu:checked~.menu {
+    /*css do funcionamento do botão do menu lateral*/
+    margin-left: 0;
+}
+
+main h1 {
+    /*css dos títulos principais*/
+    background-color: #eee1b1;
+    font-size: 40px;
+    padding: 10px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+main a {
+    /*css das palavras com links*/
+    text-decoration: none;
+    color: black;
+}
+
+.rodape-pagina {
+    /*css do rodapé da página*/
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    color: black;
+    background-color: white;
+    padding: 5px;
+}
